@@ -139,259 +139,259 @@ INSERT INTO public.ventas(
 
             id_cliente, fecha, monto)
 
-    VALUES (1, NOW() + interval '2' day, '1000' + 100);
+    VALUES (1, NOW() - interval '2' day, '1000' + 100);
 
 INSERT INTO public.ventas(
 
             id_cliente, fecha, monto)
 
-    VALUES (2, NOW() + interval '3' day, '1000' + 200);
+    VALUES (2, NOW() - interval '3' day, '1000' + 200);
 
 INSERT INTO public.ventas(
 
             id_cliente, fecha, monto)
 
-    VALUES (3, NOW() + interval '4' day, '1000' + 300);
+    VALUES (3, NOW() - interval '4' day, '1000' + 300);
 
 INSERT INTO public.ventas(
 
             id_cliente, fecha, monto)
 
-    VALUES (4, NOW() + interval '5' day, '1000' + 400);
+    VALUES (4, NOW() - interval '5' day, '1000' + 400);
 
 INSERT INTO public.ventas(
 
             id_cliente, fecha, monto)
 
-    VALUES (5, NOW() + interval '6' day, '1000' + 500);
+    VALUES (5, NOW() - interval '6' day, '1000' + 500);
 
 INSERT INTO public.ventas(
 
             id_cliente, fecha, monto)
 
-    VALUES (6, NOW() + interval '7' day, '1000' + 600);
+    VALUES (6, NOW() - interval '7' day, '1000' + 600);
 
 INSERT INTO public.ventas(
 
             id_cliente, fecha, monto)
 
-    VALUES (7, NOW() + interval '8' day, '1000' + 700);
+    VALUES (7, NOW() - interval '8' day, '1000' + 700);
 
 INSERT INTO public.ventas(
 
             id_cliente, fecha, monto)
 
-    VALUES (8, NOW() + interval '9' day, '1000' + 800);
+    VALUES (8, NOW() - interval '9' day, '1000' + 800);
 
 INSERT INTO public.ventas(
 
             id_cliente, fecha, monto)
 
-    VALUES (9, NOW() + interval '10' day, '1000' + 900);
+    VALUES (9, NOW() - interval '10' day, '1000' + 900);
 
 INSERT INTO public.ventas(
 
             id_cliente, fecha, monto)
 
-    VALUES (10, NOW() + interval '11' day, '1000' + 1000);
+    VALUES (10, NOW() - interval '11' day, '1000' + 1000);
 
 INSERT INTO public.ventas(
 
             id_cliente, fecha, monto)
 
-    VALUES (11, NOW() + interval '12' day, '1000' + 1100);
+    VALUES (11, NOW() - interval '12' day, '1000' + 1100);
 
 INSERT INTO public.ventas(
 
             id_cliente, fecha, monto)
 
-    VALUES (12, NOW() + interval '13' day, '1000' + 1200);
+    VALUES (12, NOW() - interval '13' day, '1000' + 1200);
 
 INSERT INTO public.ventas(
 
             id_cliente, fecha, monto)
 
-    VALUES (13, NOW() + interval '14' day, '1000' + 1300);
+    VALUES (13, NOW() - interval '14' day, '1000' + 1300);
 
 INSERT INTO public.ventas(
 
             id_cliente, fecha, monto)
 
-    VALUES (14, NOW() + interval '15' day, '1000' + 1400);
+    VALUES (14, NOW() - interval '15' day, '1000' + 1400);
 
 INSERT INTO public.ventas(
 
             id_cliente, fecha, monto)
 
-    VALUES (15, NOW() + interval '16' day, '1000' + 1500);
+    VALUES (15, NOW() - interval '16' day, '1000' + 1500);
 
 INSERT INTO public.ventas(
 
             id_cliente, fecha, monto)
 
-    VALUES (16, NOW() + interval '17' day, '1000' + 1600);
+    VALUES (16, NOW() - interval '17' day, '1000' + 1600);
 
 INSERT INTO public.ventas(
 
             id_cliente, fecha, monto)
 
-    VALUES (17, NOW() + interval '18' day, '1000' + 1700);
+    VALUES (17, NOW() - interval '18' day, '1000' + 1700);
 
 INSERT INTO public.ventas(
 
             id_cliente, fecha, monto)
 
-    VALUES (18, NOW() + interval '19' day, '1000' + 1800);
+    VALUES (18, NOW() - interval '19' day, '1000' + 1800);
 
 INSERT INTO public.ventas(
 
             id_cliente, fecha, monto)
 
-    VALUES (19, NOW() + interval '20' day, '1000' + 1900);
+    VALUES (19, NOW() - interval '20' day, '1000' + 1900);
 
 INSERT INTO public.ventas(
 
             id_cliente, fecha, monto)
 
-    VALUES (20, NOW() + interval '21' day, '1000' + 2000);
+    VALUES (20, NOW() - interval '21' day, '1000' + 2000);
 
 INSERT INTO public.ventas(
 
             id_cliente, fecha, monto)
 
-    VALUES (21, NOW() + interval '22' day, '1000' + 2100);
+    VALUES (21, NOW() - interval '22' day, '1000' + 2100);
 
 INSERT INTO public.ventas(
 
             id_cliente, fecha, monto)
 
-    VALUES (22, NOW() + interval '23' day, '1000' + 2200);
+    VALUES (22, NOW() - interval '23' day, '1000' + 2200);
 
 INSERT INTO public.ventas(
 
             id_cliente, fecha, monto)
 
-    VALUES (23, NOW() + interval '24' day, '1000' + 2300);
+    VALUES (23, NOW() - interval '24' day, '1000' + 2300);
 
 INSERT INTO public.ventas(
 
             id_cliente, fecha, monto)
 
-    VALUES (24, NOW() + interval '25' day, '1000' + 2400);
+    VALUES (24, NOW() - interval '25' day, '1000' + 2400);
 
 INSERT INTO public.ventas(
 
             id_cliente, fecha, monto)
 
-    VALUES (25, NOW() + interval '26' day, '1000' + 2500);
+    VALUES (25, NOW() - interval '26' day, '1000' + 2500);
 
 INSERT INTO public.ventas(
 
             id_cliente, fecha, monto)
 
-    VALUES (26, NOW() + interval '27' day, '1000' + 2600);
+    VALUES (26, NOW() - interval '27' day, '1000' + 2600);
 
 INSERT INTO public.ventas(
 
             id_cliente, fecha, monto)
 
-    VALUES (27, NOW() + interval '9' day, '1000' + 2700);
+    VALUES (27, NOW() - interval '9' day, '1000' + 2700);
 
 INSERT INTO public.ventas(
 
             id_cliente, fecha, monto)
 
-    VALUES (28, NOW() + interval '28' day, '1000' + 2800);
+    VALUES (28, NOW() - interval '28' day, '1000' + 2800);
 
 INSERT INTO public.ventas(
 
             id_cliente, fecha, monto)
 
-    VALUES (29, NOW() + interval '29' day, '1000' + 3800);
+    VALUES (29, NOW() - interval '29' day, '1000' + 3800);
 
 INSERT INTO public.ventas(
 
             id_cliente, fecha, monto)
 
-    VALUES (30, NOW() + interval '30' day, '1000' + 4800);
+    VALUES (30, NOW() - interval '30' day, '1000' + 4800);
 
 INSERT INTO public.ventas(
 
             id_cliente, fecha, monto)
 
-    VALUES (31, NOW() + interval '31' day, '1000' + 5800);
+    VALUES (31, NOW() - interval '31' day, '1000' + 5800);
 
 INSERT INTO public.ventas(
 
             id_cliente, fecha, monto)
 
-    VALUES (32, NOW() + interval '32' day, '1000' + 6800);
+    VALUES (32, NOW() - interval '32' day, '1000' + 6800);
 
 INSERT INTO public.ventas(
 
             id_cliente, fecha, monto)
 
-    VALUES (33, NOW() + interval '33' day, '1000' + 7800);
+    VALUES (33, NOW() - interval '33' day, '1000' + 7800);
 
 INSERT INTO public.ventas(
 
             id_cliente, fecha, monto)
 
-    VALUES (34, NOW() + interval '34' day, '1000' + 5300);
+    VALUES (34, NOW() - interval '34' day, '1000' + 5300);
 
 INSERT INTO public.ventas(
 
             id_cliente, fecha, monto)
 
-    VALUES (35, NOW() + interval '35' day, '1000' + 5400);
+    VALUES (35, NOW() - interval '35' day, '1000' + 5400);
 
 INSERT INTO public.ventas(
 
             id_cliente, fecha, monto)
 
-    VALUES (36, NOW() + interval '36' day, '1000' + 5500);
+    VALUES (36, NOW() - interval '36' day, '1000' + 5500);
 
 INSERT INTO public.ventas(
 
             id_cliente, fecha, monto)
 
-    VALUES (37, NOW() + interval '37' day, '1000' + 5600);
+    VALUES (37, NOW() - interval '37' day, '1000' + 5600);
 
 INSERT INTO public.ventas(
 
             id_cliente, fecha, monto)
 
-    VALUES (38, NOW() + interval '38' day, '1000' + 5700);
+    VALUES (38, NOW() - interval '38' day, '1000' + 5700);
 
 INSERT INTO public.ventas(
 
             id_cliente, fecha, monto)
 
-    VALUES (39, NOW() + interval '39' day, '1000' + 5800);
+    VALUES (39, NOW() - interval '39' day, '1000' + 5800);
 
 INSERT INTO public.ventas(
 
             id_cliente, fecha, monto)
 
-    VALUES (40, NOW() + interval '40' day, '1000' + 5900);
+    VALUES (40, NOW() - interval '40' day, '1000' + 5900);
 
 INSERT INTO public.ventas(
 
             id_cliente, fecha, monto)
 
-    VALUES (41, NOW() + interval '41' day, '1000' + 6000);
+    VALUES (41, NOW() - interval '41' day, '1000' + 6000);
 
 INSERT INTO public.ventas(
 
             id_cliente, fecha, monto)
 
-    VALUES (42, NOW() + interval '42' day, '1000' + 6100);
+    VALUES (42, NOW() - interval '42' day, '1000' + 6100);
 
 INSERT INTO public.ventas(
 
             id_cliente, fecha, monto)
 
-    VALUES (43, NOW() + interval '43' day, '1000' + 6200);
+    VALUES (43, NOW() - interval '43' day, '1000' + 6200);
 
 
 
@@ -402,40 +402,6 @@ INSERT INTO public.ventas(
 -------------------------Random Inserts----------------------------------
 
 
-
-
-
-CREATE OR REPLACE FUNCTION crear_ventas()
-
-RETURNS void AS
-
-$BODY$BEGIN
-
-
-
---Inicio del ciclo for para los inserts
-
-	for i in 1..43 loop
-
-
-
-		INSERT INTO public.ventas(id_cliente, fecha, monto) VALUES (random()*(43-1)+1, now() + trunc(random()  * 20) * '1 day'::interval, '1000' * i);
-
-
-
-	end loop;
-
-
-
-END;$BODY$--Termino del método.
-
-LANGUAGE 'plpgsql' VOLATILE;
-
-
-
-
-
-select crear_ventas();-- Utilizar para ejecutar el método
 
 INSERT INTO tipos_seguros VALUES (default, 'Vida');
 INSERT INTO tipos_seguros VALUES (default, 'Vehículo');
