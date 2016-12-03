@@ -16,13 +16,14 @@ En este directorio contiene los archivos necesarios para realizar la minería en
 En este caso, se utilizará la consola de R para ejecutar el script.	
 
 1. Ejecutar la consola de R usando `sudo` con el siguiente comando, se necesita los permisos de administrador ya que al parecer R necesita los mismos para hacer cambios a una base de datos utilizando el driver.
-```bash
-sudo R
-```
+  ```bash
+  sudo R
+  ```
+
 2. Abrir código del script utilizando la instrucción `source` desde la consola de R.
-```r
-source("ruta-del-archivo.r")
-```
+  ```r
+  source("ruta-del-archivo.r")
+  ```
 
 ## Soluciones a problemas comunes
 
