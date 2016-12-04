@@ -12,7 +12,7 @@ CREATE OR REPLACE FUNCTION crear_ventas()
 RETURNS void AS
 $BODY$BEGIN
 	for i in 1..43 loop
-		INSERT INTO public.ventas(id_cliente, fecha, monto) VALUES (random()*(43-1)+1, now() + trunc(random()  * 20) * '1 day'::interval, '1000' * i);
+		INSERT INTO public.ventas(id_cliente, fecha, monto) VALUES (random()*(43-1)+1, now() + trunc(random()  * 20) * '1 day'::interval, 0);
 	end loop;
 END;$BODY$
 LANGUAGE 'plpgsql' VOLATILE;
@@ -26,3 +26,33 @@ $BODY$BEGIN
 	end loop;
 END;$BODY$
 LANGUAGE 'plpgsql' VOLATILE;
+
+-- Generar 167 ventas
+CREATE OR REPLACE FUNCTION generar_ventas() RETURNS void AS $$
+DECLARE
+num_contrato bigint;
+BEGIN
+	for i in 1..167 loop
+	-- Crear una nueva venta
+	INSERT INTO public.ventas(id, id_cliente, fecha, monto) VALUES (default, random()*(43-1)+1, timestamp '2016-12-01 20:00:00' + (random() * (timestamp '2016-12-31 20:00:00' -timestamp '2016-12-01 10:00:00')), 0);
+	--** Alojar en una variable el valor del random para el contrato
+	num_contrato = random()*(47-1)+1;
+	-- Crear una ventas_contratos
+	INSERT INTO ventas_contratos(id_venta, id_contrato, fecha_limite) values (currval('ventas_id_seq'), num_contrato, now());
+	-- Actualizar fecha límite
+	UPDATE public.ventas_contratos
+	SET fecha_limite=
+		(select (v.fecha + '1 month'::interval * c.duracion) as "suma"
+		from contratos as c, ventas_contratos as vc, ventas as v
+		where vc.id_contrato = c.id and vc.id_venta = v.id and vc.id_contrato = num_contrato and vc.id_venta = currval('ventas_id_seq'))
+	WHERE id_venta= currval('ventas_id_seq');
+	-- Actualizar el monto de la venta
+	UPDATE public.ventas
+	SET monto=
+		(select s.precio
+		from seguros as s, contratos as c, ventas_contratos as vc, ventas as v
+		where v.id = vc.id_venta and vc.id_contrato = c.id and c.id_seguro = s.id and v.id = currval('ventas_id_seq'))
+	WHERE id=currval('ventas_id_seq');
+	end loop;
+END $$
+LANGUAGE plpgsql;
