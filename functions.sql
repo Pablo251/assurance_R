@@ -109,3 +109,19 @@ BEGIN
 	end loop;
 END $$
 LANGUAGE plpgsql;
+
+
+--Función que selecciona los productos con mayor demanda.
+CREATE OR REPLACE FUNCTION highest_sales(_max_tokens int) RETURNS Table(descripcion text, contrato int, con bigint)  AS $$
+BEGIN
+
+RETURN QUERY
+select s.descripcion, vc.id_contrato, count(*) as con
+from seguros as s, contratos as c, ventas_contratos as vc, ventas as v
+where v.id = vc.id_venta and vc.id_contrato = c.id and c.id_seguro = s.id GROUP BY vc.id_contrato, s.descripcion
+ORDER BY con DESC limit 5;
+
+END $$
+LANGUAGE plpgsql;
+
+SELECT * FROM highest_sales(123);
