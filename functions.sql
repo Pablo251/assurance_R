@@ -4,7 +4,7 @@
 CREATE OR REPLACE FUNCTION ventas(fecha_inicio DATE, fecha_fin DATE, row_limit INTEGER) RETURNS BIGINT AS $$
 DECLARE
 ventas bigint;
-BEGIN	
+BEGIN
 	IF row_limit IS NULL
 	THEN
 		SELECT INTO ventas SUM(monto) from (SELECT monto from ventas WHERE fecha >= fecha_inicio AND fecha < fecha_fin) as ventas;
