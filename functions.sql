@@ -53,6 +53,12 @@ LANGUAGE plpgsql;
 
 -- Crecimiento de las ventas
 
+CREATE OR REPLACE FUNCTION crecimiento_ventas() RETURNS TABLE(total BIGINT) AS $$
+BEGIN
+	RETURN QUERY SELECT COUNT(*) FROM ventas where fecha >= (SELECT date_trunc('month', now() - '1 month'::interval) AS DATE) AND fecha < (SELECT (date_trunc('month', now() - INTERVAL '1 MONTH') + INTERVAL '1 MONTH - 1 day') as DATE) UNION ALL SELECT COUNT(*) FROM ventas where fecha >= (SELECT date_trunc('month', now()) AS DATE) AND fecha < (SELECT (date_trunc('month', now()) + INTERVAL '1 MONTH - 1 day') as DATE);
+END $$
+LANGUAGE plpgsql;
+
 
 -- Fidelidad del cliente
 

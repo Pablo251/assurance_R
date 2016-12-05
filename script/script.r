@@ -18,8 +18,21 @@ password <- Sys.getenv("POSTGRESQL_PASSWORD")
 
 con <- dbConnect(drv, host=host, port=port, dbname=dbname, user=user, password=password)
 
-# print(dbExistsTable(con, 'seguros')) Busca si existe una tabla con el nombre 'seguros'
+# Crecimiento de los ingresos
+#df_postgres <- dbGetQuery(con, "SELECT ventas('2016-11-01', '2016-12-01', 100)")
 
-df_postgres <- dbGetQuery(con, "SELECT * from seguros")
+# Beneficio o rentabilidad de la inversión
+#df_postgres <- dbGetQuery(con, "SELECT ventas('2016-11-01', '2016-12-01')")
+#df_postgres <- dbGetQuery(con, "SELECT inversiones('2016-11-01', '2016-12-01')")
 
-print(df_postgres)
+# Interés del producto
+#df_postgres <- dbGetQuery(con, "SELECT highest_sales()")
+
+# Crecimiento de las ventas
+#df_postgres <- dbGetQuery(con, "SELECT crecimiento_ventas()")
+
+# Fidelidad del cliente
+#df_postgres <- dbGetQuery(con, "SELECT fidelidad_potencial()")
+
+# Imprimir resultado
+#print(df_postgres)
