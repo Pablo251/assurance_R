@@ -10,6 +10,7 @@ En este directorio contiene los archivos necesarios para realizar la minería en
 
 ## Configuración
 
+Primero se necesita agregar un archivo `.env` al directorio del proyecto conteniendo las credenciales de la base de datos, se puede usar como ejemplo el archivo `.env.example` en este repositorio como referencia.
 
 ## Ejecutar script
 
