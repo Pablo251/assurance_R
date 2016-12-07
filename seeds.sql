@@ -38,10 +38,10 @@ INSERT INTO public.cliente(
 INSERT INTO public.cliente(
             cedula, nombre, apellido)
     VALUES (307430666, 'Alonso', 'Hernández');
-    
+
 INSERT INTO public.cliente(
             cedula, nombre, apellido)
-    VALUES (307430662, 'Pedro', 'Hernández');    
+    VALUES (307430662, 'Pedro', 'Hernández');
 INSERT INTO public.cliente(
             cedula, nombre, apellido)
     VALUES (304120672, 'Vicente', 'Cascante');
@@ -69,67 +69,67 @@ INSERT INTO public.cliente(
 
 INSERT INTO public.cliente(
             cedula, nombre, apellido)
-    VALUES (307520177, 'Yeison', 'Campbell');                                    
+    VALUES (307520177, 'Yeison', 'Campbell');
 INSERT INTO public.cliente(
             cedula, nombre, apellido)
-    VALUES (405620999, 'David', 'Carvajal');    
+    VALUES (405620999, 'David', 'Carvajal');
 INSERT INTO public.cliente(
             cedula, nombre, apellido)
-    VALUES (406270152, 'Bladimir', 'Arroyo');    
+    VALUES (406270152, 'Bladimir', 'Arroyo');
 INSERT INTO public.cliente(
             cedula, nombre, apellido)
-    VALUES (403920982, 'Blas', 'Perez');    
+    VALUES (403920982, 'Blas', 'Perez');
 INSERT INTO public.cliente(
             cedula, nombre, apellido)
-    VALUES (404570821, 'Victor', 'Ramírez');    
+    VALUES (404570821, 'Victor', 'Ramírez');
 INSERT INTO public.cliente(
             cedula, nombre, apellido)
-    VALUES (405190672, 'Warren', 'Arroyo');    
+    VALUES (405190672, 'Warren', 'Arroyo');
 INSERT INTO public.cliente(
             cedula, nombre, apellido)
-    VALUES (401870826, 'Brian', 'Murillo');    
+    VALUES (401870826, 'Brian', 'Murillo');
 INSERT INTO public.cliente(
             cedula, nombre, apellido)
-    VALUES (407070404, 'Alexa', 'Rodríguez');    
+    VALUES (407070404, 'Alexa', 'Rodríguez');
 INSERT INTO public.cliente(
             cedula, nombre, apellido)
-    VALUES (408890234, 'Catalina', 'Blanco');    
+    VALUES (408890234, 'Catalina', 'Blanco');
 INSERT INTO public.cliente(
             cedula, nombre, apellido)
-    VALUES (409070956, 'Paola', 'Lopez');    
+    VALUES (409070956, 'Paola', 'Lopez');
 INSERT INTO public.cliente(
             cedula, nombre, apellido)
-    VALUES (505670892, 'Pamela', 'Alfaro');    
+    VALUES (505670892, 'Pamela', 'Alfaro');
 INSERT INTO public.cliente(
             cedula, nombre, apellido)
-    VALUES (504970452, 'Peter', 'Jenkins');    
+    VALUES (504970452, 'Peter', 'Jenkins');
 INSERT INTO public.cliente(
             cedula, nombre, apellido)
-    VALUES (503440347, 'Olger', 'Cubero');    
+    VALUES (503440347, 'Olger', 'Cubero');
 INSERT INTO public.cliente(
             cedula, nombre, apellido)
-    VALUES (502780218, 'Saul', 'Fernández');    
+    VALUES (502780218, 'Saul', 'Fernández');
 INSERT INTO public.cliente(
             cedula, nombre, apellido)
-    VALUES (507670925, 'Dania', 'Quitanilla');    
+    VALUES (507670925, 'Dania', 'Quitanilla');
 INSERT INTO public.cliente(
             cedula, nombre, apellido)
-    VALUES (601670872, 'Dilmer', 'Zapata');    
+    VALUES (601670872, 'Dilmer', 'Zapata');
 INSERT INTO public.cliente(
             cedula, nombre, apellido)
-    VALUES (603620718, 'Gabriela', 'Chinchilla');    
+    VALUES (603620718, 'Gabriela', 'Chinchilla');
 INSERT INTO public.cliente(
             cedula, nombre, apellido)
-    VALUES (605670892, 'Christan', 'Blanco');    
+    VALUES (605670892, 'Christan', 'Blanco');
 INSERT INTO public.cliente(
             cedula, nombre, apellido)
-    VALUES (706720972, 'Mariel', 'Molina');    
+    VALUES (706720972, 'Mariel', 'Molina');
 INSERT INTO public.cliente(
             cedula, nombre, apellido)
-    VALUES (702360977, 'Nela', 'Segura');    
+    VALUES (702360977, 'Nela', 'Segura');
 INSERT INTO public.cliente(
             cedula, nombre, apellido)
-    VALUES (706720823, 'Hazel', 'Oporta');   
+    VALUES (706720823, 'Hazel', 'Oporta');
 
 -- Inserts a en la forma normal para cada uno de los primeros 43 clientes.
 
@@ -420,6 +420,5 @@ INSERT INTO seguros VALUES (default, 'Daños', 4, 800000);
 INSERT INTO seguros VALUES (default, 'Materiales', 4, 500000);
 INSERT INTO seguros VALUES (default, 'Daños', 5, 145000);
 INSERT INTO seguros VALUES (default, 'Compra de materiales', 5, 434000);
-INSERT INTO seguros VALUES (default, 'Daños provocados por una fuerza mayor', 6, 650000);
+INSERT INTO seguros VALUES (default, 'Daños provocados por desastres naturales', 6, 650000);
 INSERT INTO seguros VALUES (default, 'Danos provocados por terceros', 6, 850000);
-
