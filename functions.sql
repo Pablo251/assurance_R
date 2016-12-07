@@ -135,21 +135,15 @@ SELECT * FROM highest_sales(123);
 -- Retorna la información de clientes, seguros, contratos y la respectiva venta
 -- de un cliente potencial, demostrando su fidelidad por medio de más de una compra
 -- realizada en fechas distintas. 
-CREATE OR REPLACE FUNCTION fidelidad_potencial(_max_tokens int) RETURNS Table(cedula_cliente integer, cedula varchar, apellido varchar, seguro text, fecha_de_venta date, duracion_del_contrato integer, fecha_limite date, monto bigint)  AS $$
+CREATE OR REPLACE FUNCTION fidelidad_potencial() RETURNS Table(nombre varchar, cedula int, amount bigint)  AS $$
 BEGIN
 
 RETURN QUERY
-SELECT cli.cedula, cli.nombre, cli.apellido, s.descripcion as "seguro", v.fecha, c.duracion, vc.fecha_limite, v.monto
-FROM contratos as c, ventas_contratos as vc, ventas as v, cliente as cli, seguros as s
-WHERE c.id IN
-    (     SELECT id_contrato
-          FROM ventas_contratos
-          GROUP BY id_contrato
-          HAVING COUNT(id_contrato) > 1
-    ) and vc.id_contrato = c.id and vc.id_venta = v.id and v.id_cliente = cli.id and c.id_seguro = s.id
-ORDER BY cli.nombre limit 10;
+SELECT c.nombre, c.cedula, cc.amount FROM (SELECT v.id_cliente, COUNT(*) as amount FROM ventas as v, ventas_contratos as vc
+                                      WHERE v.id = vc.id_venta GROUP BY v.id_cliente) as cc, cliente as c WHERE
+                                     cc.id_cliente = c.id ORDER BY amount DESC limit 5;
 
 END $$
 LANGUAGE plpgsql;
 
-SELECT * FROM fidelidad_potencial(123);
+SELECT * FROM fidelidad_potencial();  
